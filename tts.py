@@ -17,9 +17,6 @@ def list_available_voices(engine):
     voices = engine.getProperty('voices')
     return voices
 
-# --- ADD THIS BELOW list_available_voices() ---
-
-# Choose only the voices you want
 ALLOWED_IDS = [
     "com.apple.voice.compact.en-US.Samantha",
     "com.apple.voice.compact.en-GB.Daniel",
@@ -51,7 +48,6 @@ def main():
         
         voices = list_available_voices(engine)
 
-        # Filter only the voices we selected
         filtered_voices = filter_by_ids(voices)
 
         print("Here are the available voices:")
