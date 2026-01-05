@@ -5,7 +5,7 @@ def setup_tts_engine():
     engine = pyttsx3.init()
     return engine
 
-def adjust_tts_settings(engine, speed=100, volume=1.0, voice_id=None):
+def adjust_tts_settings(engine, speed=190, volume=1.0, voice_id=None):
     engine.setProperty('rate', speed)
     
     engine.setProperty('volume', volume)
